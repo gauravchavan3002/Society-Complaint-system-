@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+<form action="" method="post">
+
+  <div class="container">
+  <p>USERNAME</p>
+    <input type="text" id="username"  name="username" placeholder="enter your username">
+<p>PASSWORD</p>
+<input type="password" name="password" placeholder="enter your password" id="password">
+<button type="button" class="greenbtn" name="" value="LOGIN" onclick="login()">LOGIN</button>
+<br>
+
+ <div class="container" >
+    <button type="button" class="cancelbtn" onClick="javascript:return confirm ('Are you really want to delete ?');">Cancel</button>
+        <button type="button" class="cancelbtn" onclick="window.location.href = 'forgotpass.html';">Forget Password</button>
+        <button type="button" class="greenbtn" onclick="window.location.href = 'newuser.html';">Add New User</button>
+  </div>
+
+<script>
+function login()
+{
+var a=document.getElementById('username').value
+var b=document.getElementById('password').value
+if(a==""||b=="")
+{
+alert("!!! please fill the details !!!");
+}
+else 
+if(a=="CHAVAN" && b=="12345")
+{
+window.open("message.html");
+}
+else
+if(a=="GAURAV" && b=="770985")
+{
+window.open("admin_profile.html");
+}
+else
+if(a=="ZINDU" && b=="12345")
+{
+window.open("message.html");
+}
+else
+if(a=="POOJA" && b=="12345")
+{
+window.open("message.html");
+}
+else
+if(a=="SOHEL" && b=="12345")
+{
+window.open("message.html");
+}
+else
+if(a=="SNEHAL" && b=="12345")
+{
+window.open("message.html");
+}
+else
+if(a=="SHINDE" && b=="12345")
+{
+window.open("message.html");
+}
+else
+{
+alert("wrong id/password");
+}
+
+}
+</script>
+</body>

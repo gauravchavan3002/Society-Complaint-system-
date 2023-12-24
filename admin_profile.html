@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="admin_profile.css">
+<title>admin_profile</title>
+
+<script src="script.js"></script>
+</head>
+<body>
+	<div class="animated fadeIn">
+		<div class="cover main">
+			<a class="button logout" href="login.html"	onClick="javascript:return confirm ('Are you really want to delete ?');">
+				Logout </a> &nbsp;&nbsp;&nbsp;
+
+			<!-- <p class="text-right">
+
+            </p> -->
+
+		</div>
+		<div class="content">
+			<div class="col-lg-12">
+				<div class="analysis">
+					<div class="box-container">
+
+						<div class="box box1">
+							<div class="text">
+							<h2 class="topic" onclick="window.location.href = 'user_retrive.jsp';">Total Users</h2>
+							</div>
+						</div>
+						<div class="box box2">
+							<div class="text">
+								<h2 class="topic" onclick="window.location.href = 'engineer_retrive.jsp';">Total Engineer</h2>
+							</div>
+						</div>
+						<div class="box box3">
+							<div class="text">
+							<h2 class="topic" onclick="window.location.href = 'complaintretrive.jsp';">Complaints</h2>
+							</div>
+						</div>
+						<div class="box box4">
+							<div class="text">
+								<h2 class="topic">Forwarded</h2>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="post_content">
+								<div class="text-center">
+									<h2>Anything in your mind</h2>
+									<br>
+									<br>
+									<form class="" action="" method="post">
+										<input type="text" class="post" name="subject"
+											placeholder="Subject" /><br>
+										<br>
+										<textarea name="story" class="post" rows="3" cols="30"
+											placeholder="Story"></textarea>
+										<br>
+										<br>
+
+										<div class="admin-button">
+											<button type="submit" class="log">Post</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+
+			<div class="textbox">
+				<!-- making <button> -->
+				<div class="new">
+					<button onclick="window.location.href = 'newuser_retrive.jsp';">New User</button>
+					<button type="submit" class="log">new message from</button>
+
+
+					<button type="submit" class="log">new engineer</button>
+				</div>
+
+				<!-- original -->
+
+
+				<!-- <div class="div_data">New User</div>
+                    <div class="div_data">New Message From</div>
+                    <div class="div_data">New Engineer </div> 
+                </div> -->
+				<div class="new box2">
+					<span></span>
+				</div>
+
+				<div class="new box4">
+					<span></span>
+				</div>
+				<div class="new box1">
+					<span> </span>
+				</div>
+			</div>
+		</footer>
+
+		<script src="jquery.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="script.js"></script>
+		<script>
+            $(document).ready(function() {
+                $("#close").click(function() {
+                    $("#msg").remove();
+                });
+            });
+        </script>
+</body>
+
+</html>

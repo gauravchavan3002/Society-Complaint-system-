@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="message.css">
+    <title>CPMS</title>
+    <link rel="shortcut icon" href="ico.ico">
+
+    <style media="screen">
+        table {
+            border: 0px;
+        }
+        
+        td {
+            padding: 10px;
+            border-top: 0px solid #eee;
+            border-bottom: 0px solid #eee !important;
+            padding-left: 0px;
+            color: #0ea798;
+        }
+        
+        input,
+        button.log {
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="message.jsp">
+        <div class="cover user text-center" style="height: 120px;">
+            <br>
+            <h2>Add Complaints</h2>
+        </div>
+
+        <div class="animated fadeIn">
+            <div class="padd">
+                <div class="col-lg-12 text-center">
+
+
+                    <div class="container">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2>Your Refference no : &nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="text-left">Your Username</td>
+                                <td><input type="text" name="username" placeholder="username" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Your Flat No.</td>
+                                <td><input type="text" name="f_no" placeholder="user id" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Your Email ID</td>
+                                <td><input type="text" name="email" placeholder="email id" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Your Contact Number *</td>
+                                <td><input type="text" name="phoneno" maxlength=10 placeholder="Your Phone number" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Your Subject *</td>
+                                <td><input type="text" name="subject" placeholder="Subject" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Your Complaint *</td>
+                                <td><textarea name="complaint" rows="8" cols="80" placeholder="Your complaint" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                        </table>
+
+
+
+                        <div class="button-container">
+                            <td><button type="submit">Submit</button></td>
+                        </div>
+                        </tr>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <footer>
+            <br>
+            <br>
+        </footer>
+      
+    </form>
+</body>
+
+</html>

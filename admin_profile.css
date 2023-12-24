@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --background-color1: #aa1467;
+    --background-color2: #ffffff;
+    --background-color3: #ededed;
+    --background-color4: #cad7fda4;
+    --primary-color: #4b49ac;
+    --secondary-color: #0a7d00;
+    --Border-color: #3f0097;
+    --two-use-color: #055a69;
+    --two-use-color: #0beee3;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#f1f8f8f8, #191794);
+}
+
+
+/* body {
+    background-color: var(--background-color4);
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.content {
+    max-width: 550;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(5, 4, 4, 0);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.box {
+    height: 130px;
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 77, 87, 0.751);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.box:hover {
+    transform: scale(1.08);
+}
+
+.box:nth-child(1) {
+    background-color: var(--two-use-color);
+}
+
+.box:nth-child(2) {
+    background-color: var(--two-use-color);
+}
+
+.box:nth-child(3) {
+    background-color: var(--two-use-color);
+}
+
+.box:nth-child(4) {
+    background-color: var(--one-use-color);
+}
+
+.box .text {
+    color: rgb(5, 3, 3);
+}
+
+.button-container {
+    margin: 15px 0;
+}
+
+.admin-button button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #1fe630, #1fafc2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-button button:hover {
+    background-image: linear-gradient(to right, #1fafc2, #1fe630);
+}
+
+
+/* .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-image: linear-gradient(#f1f8f8f8, #191794);
+} */
+
+.new button {
+    width: 15%;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: rgba(7, 3, 3, 0.877);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
